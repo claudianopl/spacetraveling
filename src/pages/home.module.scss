@@ -1,0 +1,64 @@
+.wrapper {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+
+  > header {
+    padding: 5rem 0 4rem;
+  }
+}
+
+.container {
+  margin-bottom: 4rem;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  > span {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--heading);
+  }
+
+  .subtitle {
+    color: var(--body);
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .datePost {
+    display: flex;
+    gap: 1.75rem;
+
+    svg {
+      margin: 0 0.4rem 0 0;
+      color: var(--info)
+    }
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+
+      time {
+        font-size: 14px;
+        color: var(--info);
+      }
+
+      p {
+        font-size: 14px;
+        color: var(--info);
+      }
+    }
+  }
+}
